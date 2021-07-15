@@ -1,0 +1,27 @@
+
+//Event Loop is started by nodejs as soon as it starts processing
+//Event Loop will only contain callbacks that will usually be fast finished
+
+//Another that nodejs uses is Worker Pool which is responsible for all the heavy and time consuming processes like file system operations
+//And this worker pool is multithreaded and can handle multiple requests at a time
+
+//Once worker pool is finished executing, it's callback function is handled by event Loop
+
+//This is all done by node js internally
+
+//Event Loop executes in a certain way/order
+//First it handles all timers callbacks like of settimeout, setinterval
+//then it handles I/O pending callbacks like of file system read write callbacks
+//then it checks our event callbacks - new I/O events callbacks
+//then 'setImmediate()' callbacks
+//then all 'close' events callbacks
+//and then if there are no event handlers registered then process.exit
+
+//Nodejs keeps track of its open event listerners by managing a counter 'refs'(references) which is incremented by one for every event listerner
+//and reduces counter by 1 when it has finished executing and it doesn't need to register that event listener callback anymore
+//so when refs == 0, it means process can exit
+//but in actual node server, we will alawys have one listner open (server.listen) which will listen to the incoming requests on the server and keep the server running
+//hence refs will always be 1 and process will not exit 
+
+//but if we do not have server and only file like operations then refs will come down to 0 after finished executing all callbacks and 
+//hence process can exit
