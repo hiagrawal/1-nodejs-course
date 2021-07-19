@@ -7,3 +7,9 @@ Full Node.js Reference (for all core modules): https://nodejs.org/dist/latest/do
 More about the Node.js Event Loop: https://nodejs.org/en/docs/guides/event-loop-timers-and-nexttick/
 
 Blocking and Non-Blocking Code: https://nodejs.org/en/docs/guides/dont-block-the-event-loop/
+
+Useful resources:
+
+More on debugging Node.js: https://nodejs.org/en/docs/guides/debugging-getting-started/
+
+Debugging Node in Visual Studio Code: https://code.visualstudio.com/docs/nodejs/nodejs-debugging

@@ -1,0 +1,45 @@
+
+Since it is a server side hence debugging can not be done in browser's debug console
+
+but exactly same can be done through node js debugger which has integration with Visual studio
+
+for this: (exit application if running)
+select app.js file -> go to Run -> start debugging (F5) -> select environment: nodejs
+
+//this will start debugging mode and run the application
+//can then set breakpoints at the left in the same way we do in ui debugging and restart debugging
+//application will stop at the debugging point
+
+//this also gives us debug console where it will keep printing values and can do our code also as we do in browser's console
+//also, it shows variables, local global, call stack and can also add a watch and add any variable name 
+//(can also add it if not visible by : view -> run) 
+//different vs may have different option to option the same
+
+//restarting the debugger automatically after editing our app
+//now if any changes made in the file during debugging, to make that changes into effect, create configuration file for the same
+//since we have nodemon we can do the same. else we will have to stop debugging manually and resatrt the same
+
+//for this:
+go to run -> add configuration -> for Nodejs
+
+//this will add launch.json file in .vscode
+
+//now can add options: (this is when working in debugging mode)
+one is restart:true so it will restart the debugging again when there is any change in file
+another is runtimeExecutable which by default is node to 'nodemon' so the server will also be restarted along with the debugging process
+//but what for this to work, nodemon should be installed globally so will install nodemon -g to make it work
+also, program will be set by default, can change it to always start with the file name from where your application should launche always
+can also add console to integartedTerminal to print all console log in the terminal, by default it logs in debug console
+//this is important as we have 2 separate proceses, one is debugging nodemon and one is application nodemon
+//and if we keep it in debug console, then quitting debugging mode will also quit running application
+//hence with runtimeExecutable as nodemon, always keep console to integartedTerminal
+
+Can also deep dive about it here:
+
+Debugging Node.js in Visual Studio Code
+Want to dive super-deep into the latest debugging capabilities Visual Studio Code gives you (for Node.js apps)?
+
+This article will be very helpful: https://code.visualstudio.com/docs/nodejs/nodejs-debugging
+
+
+
