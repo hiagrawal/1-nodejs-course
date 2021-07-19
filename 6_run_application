@@ -1,0 +1,21 @@
+
+//till now, we used 'node filename' to run the file and start nodejs application
+//the same can be done using scripts 
+//for this, we use npm which is node package manager and it is installed with nodejs so no need to install this separately
+//npm can be used to install any third party modules as well which is not included in node modules like npm install scss
+//also, npm can also be used to initialize node project or to add extra features
+
+//to initialize the project, type 'npm init' in terminal
+//this will prompt for various questions (values in brackets represents default value if not given any) which can be changed at later point also so no worries
+//this will generate package.json file
+
+//now to initilaize the application, will have to define the same in package.json file under scripts
+//will add 'start' script, which is a special reserved keyword and hence should be of same name 
+//and can define what needs to be executed as a value for this 'start' key
+//now to run the application, type 'npm start' in the terminal and the application will be launched
+
+//In the script, can give random name also and it's value and when it is not a reserved keyword
+//will have to give 'npm run <script name>' . run should be used when it is not a reserved script
+
+// run using 'npm start' since start is a reserved keyword
+//run using 'npm run start-server' for any user defined script

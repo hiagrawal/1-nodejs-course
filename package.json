@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-course",
+  "version": "1.0.0",
+  "description": "NOde js Course",
+  "main": "1_first-app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node 3_app.js",
+    "start-server": "node 3_app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hiagrawal/nodejs-course.git"
+  },
+  "author": "Hina Agrawal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hiagrawal/nodejs-course/issues"
+  },
+  "homepage": "https://github.com/hiagrawal/nodejs-course#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

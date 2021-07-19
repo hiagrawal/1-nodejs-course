@@ -1,0 +1,24 @@
+
+//npm can be used to install 3rd party packages also which is extensively used
+//to install 3rd party packages, need to give 'npm install <packagename>'
+//can just give this, or define how that package should be installed and if it is a dev pacakge only or need it for production also
+//although, it is not that important to define dev or as prod, but it's good to know
+
+//now, whenever we are making any change, we are saving the file, exiting the server using CTRL +C and starting the server again
+//this is tedius in real scenario and for this, we have 'nodemon' pacakage
+
+//to install this, we need to give 'npm install nodemon'. 
+//This will install node modules, add it's dependency in package.json file and generate package-lock.json file also
+//now this only is also enough, but we know we would not need it in production since it is only for constant change 
+//hence install it as a dev dependency
+// can do so using 'npm install nodemon --save-dev'
+// if give just 'npm install nodemon --save' , it will be installed as a production package also
+//can also give 'npm install nodemon -g' , which means this will be installed globally in the machine and not in the project
+//so can be used in other projects also
+
+//if give just 'node install', it will install node modules and all the packages defined in the package.json file
+//so while sharing code or something, we don't include 'node modules' file and other user can simply do 'npm install'
+//this will install all packages and dependencies defined in package.json file
+
+//also, if any point of time during development, run 'npm install' (just npm install, without nay package name), 
+//this will update all dependencies and packages with the latest version
