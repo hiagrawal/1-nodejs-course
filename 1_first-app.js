@@ -5,7 +5,7 @@ console.log("Hello from node js");
 
 //creating file using node
 const fs = require('fs'); //file system
-fs.writeFileSync('Hello.txt','Hello from Nodejs 123'); //will create a file and write to it
+fs.writeFileSync('1_Hello.txt','Hello from Nodejs 123'); //will create a file and write to it
 
 //to run type in terminal : node filename which here is : node first-app.js
 //this will start executing the file and create the server and start the same

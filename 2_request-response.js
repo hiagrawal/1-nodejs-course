@@ -53,7 +53,7 @@ const server = http.createServer((req,res) => {
         // res.end();
 
         //write this
-        fs.writeFile('Input_Text', msg, (err) => {
+        fs.writeFile('2_Input_Text', msg, (err) => {
             res.statusCode ='302';
             res.setHeader('Location', '/');
             res.end();

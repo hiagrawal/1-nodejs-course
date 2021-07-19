@@ -22,7 +22,7 @@ const requestHandler = (req, res) => {
         console.log(parsedData);
         const msg = parsedData.split('=')[1];
 
-        fs.writeFile('Input_Text', msg, (err) => {
+        fs.writeFile('3_file_write', msg, (err) => {
             res.statusCode ='302';
             res.setHeader('Location', '/');
             res.end();
