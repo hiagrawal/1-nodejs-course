@@ -16,5 +16,6 @@ const route = require('./3_route');
 //way 2 - when route will have the object
 const server = http.createServer(route.handler);
 console.log(route.someText);
+console.log('testing nodemon if watching files and making changes without exiting application and restarting explicitely');
 
 server.listen(3000);
